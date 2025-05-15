@@ -22,7 +22,7 @@ func ConnectDB() {
 	// создаём URL для соединения с базой данных.
 	// Имя пользователя базы данных, пароль и имя базы данных
 	// берутся из переменных окружения,
-	// они описаны в файле .env
+	// они описаны в файле .env, его в гитхабе нет так что просто так не запуститься!
 	dsn := fmt.Sprintf(
 		"host=db user=%s password=%s dbname=%s port=5432 sslmode=disable TimeZone=Europe/Moscow",
 		os.Getenv("DB_USER"),
